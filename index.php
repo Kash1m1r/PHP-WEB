@@ -35,8 +35,7 @@
     </header>
 
     <ul class="videos__container" alt="videos alura">
-        <?php foreach ($videoList as $video): ?>
-            <?php if (str_starts_with($video['url'], 'http')): ?>
+        <?php foreach ($videoList as $video): ?>    
             <li class="videos__item">
                 <iframe width="100%" height="72%" src="<?php echo $video['url']; ?>"
                     title="YouTube video player" frameborder="0"
@@ -51,7 +50,7 @@
                     </div>
                 </div>
             </li>
-            <?php endif; ?>
+        
         <?php endforeach; ?>
     </ul>
 </body>
